@@ -29,6 +29,7 @@ if button:
         answer = generation(st.session_state.history)
         st.session_state.history.append({"role":"assistant","content" : answer})
         st.write(st.session_state.history)
-        st.session_state.question = ""
+        
         st.experimental_rerun()
+        st.session_state.question = ""
 
